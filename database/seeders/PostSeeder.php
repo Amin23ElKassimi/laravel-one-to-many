@@ -183,6 +183,7 @@ Incidunt accusamus recusandae nemo consequatur neque repellendus, veritatis arch
             $newPost = new Post();
             $newPost->title = $post['titolo'];
             $newPost->author = $post['autore'];
+            $newPost->type_id = $post['autore'];
             $newPost->post_image = $post['immagine'];
             $newPost->content = $post['contenuto'];
             $newPost->date = $post['data'];

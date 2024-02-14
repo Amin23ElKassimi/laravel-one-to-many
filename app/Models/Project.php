@@ -18,5 +18,16 @@ class Project extends Model
         'client_id',
         'budget',
         'priority',
+        'type_id'
     ];
+
+// Esattamente come nella relazione One to One, nel Model secondario mappiamo la relazione inversa usando il metodo belongsTo().
+// Nel nostro caso, inseriamo nel Model secondario Post il metodo type() che
+// rappresenta la relazione di dipendenza verso il Model Type principale.
+
+    public function type() { 
+        return  $this->belongsTo(Type::class);
+     }
+
+
 }

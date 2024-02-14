@@ -15,7 +15,8 @@
                     <thead>
                         <tr>
                             <th scope="col">client_id</th>
-                            <th scope="col">name</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Type</th>
                             <th scope="col">status</th>
                             <th scope="col">start_date</th>
                             <th scope="col">end_date</th>
@@ -41,6 +42,9 @@
                                     <a href="{{ route('admin.projects.show', $project) }}">
                                         {{ $project->name }}
                                     </a>
+                                </td>
+                                <td>
+                                    {{ $project->type->name }}
                                 </td>
                                 <td>
                                     {{ $project->status }}

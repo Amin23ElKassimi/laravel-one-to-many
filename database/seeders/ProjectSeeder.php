@@ -160,7 +160,7 @@ class ProjectSeeder extends Seeder
         for ($i = 0; $i < 100; $i++) {
             // Genera dati casuali per ogni nuovo post
             $newPost = new Project();
-            $newPost->name = $faker->sentence;
+            $newPost->name = $faker->word();
             $newPost->description = $faker->paragraph;
             $newPost->status = $faker->randomElement(['draft', 'published']);
             $newPost->view = $faker->numberBetween(0, 1000);

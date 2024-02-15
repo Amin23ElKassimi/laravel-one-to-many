@@ -44,6 +44,9 @@
                                     </a>
                                 </td>
                                 <td>
+                                    <span  style="color: {{ $project->type->color }}">
+                                        ⬤
+                                    </span>
                                     {{ $project->type->name }}
                                 </td>
                                 <td>

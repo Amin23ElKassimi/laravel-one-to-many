@@ -12,10 +12,13 @@
                         <h1>
                             {{ $project->name }}
                         </h1>
-                        <p>
-                            Status: {{ $project->status }}
+                        <p class="text-capitalize">
+                            Stat`us: {{ $project->status }}
                         </p>
-                        <p>
+                        <p class="text-capitalize">
+                            Type: {{ $project->type->name }}
+                        </p>
+                        <p class="text-capitalize">
                             Priority: {{ $project->priority }}
                         </p>
                         <p>
